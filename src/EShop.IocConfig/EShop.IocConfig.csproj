@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HtmlSanitizer" Version="6.0.453" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EShop.DataLayer\EShop.DataLayer.csproj" />
+		<ProjectReference Include="..\EShop.Entities\EShop.Entities.csproj" />
+		<ProjectReference Include="..\EShop.Services\EShop.Services.csproj" />
+		<ProjectReference Include="..\EShop.ViewModels\EShop.ViewModels.csproj" />
+	</ItemGroup>
+
+</Project>
